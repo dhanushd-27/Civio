@@ -84,13 +84,20 @@
 
     /* label */
     --text-label-letter-spacing: 0.2em;
+
+    /* navbar-padding-y */
+    --navbar-padding-y: 15px;
+
+    /* Breakpoints */
+    --breakpoint-sm: 810px;
+    --breakpoint-md: 1199px;
 }
 
 @layer base {
   h1 {
     font-size: var(--text-h1-default);
     line-height: var(--text-h1-default-line-height);
-    color: var(--color-green);
+    color: var(--color-light);
     font-weight: var(--font-weight-medium);
     text-align: center;
 
@@ -108,7 +115,7 @@
   h2 {
     font-size: var(--text-h2-md);
     line-height: var(--text-h2-md-line-height);
-    color: var(--color-green);
+    color: var(--color-light);
     font-weight: var(--font-weight-medium);
     text-align: center;
 
