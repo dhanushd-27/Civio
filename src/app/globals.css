@@ -1,1 +1,184 @@
 @import "tailwindcss";
+
+
+:root {
+  --breakpoint-sm: 810px;
+}
+
+@theme {
+  --color-green: #1F4C34;
+  --color-light: #F9F7EB;
+  --color-green-light: #1F4C34;
+
+  /* font weight */
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extrabold: 800;
+  --font-weight-black: 900;
+
+  /* Text Size */
+    /* h1 */
+    --text-h1-default: 45px;
+    --text-h1-md: 60px;
+    --text-h1-lg: 70px;
+
+    /* h2 */
+    --text-h2-md: 24px;
+    --text-h2-lg: 36px;
+
+    /* h3 */
+    --text-h3: 19px;
+
+    /* h4 */
+    --text-h4: 18px;
+
+    /* h5 */
+    --text-h5: 17px;
+
+    /* Body S */
+    --text-body-s: 16px;
+
+    /* Body L */
+    --text-body-l: 19px;
+
+    /* Label */
+    --text-label: 16px;
+
+  /* Text Line Height */
+    /* h1 */
+    --text-h1-default-line-height: 51.75px;
+    --text-h1-md-line-height: 66px;
+    --text-h1-lg-line-height: 77px;
+
+    /* h2 */
+    --text-h2-md-line-height: 28.8px;
+    --text-h2-lg-line-height: 43.2px;
+
+    /* h3 */
+    --text-h3-line-height: 22.8px;
+
+    /* h4 */
+    --text-h4-line-height: 21.6px;
+    
+    /* h5 */
+    --text-h5-line-height: 25.5px;
+
+    /* Body S */
+    --text-body-s-line-height: 22.4px;
+
+    /* Body L */
+    --text-body-l-line-height: 28.5px;
+
+    /* Label */
+    --text-label-line-height: 19.2px;
+
+  /* Letter Spacing */
+    /* h3 */
+    --text-h3-letter-spacing: 0.01em;
+
+    /* body L */
+    --text-body-l-letter-spacing: 0.05em;
+
+    /* label */
+    --text-label-letter-spacing: 0.2em;
+}
+
+@layer base {
+  h1 {
+    font-size: var(--text-h1-default);
+    line-height: var(--text-h1-default-line-height);
+    color: var(--color-green);
+    font-weight: var(--font-weight-medium);
+    text-align: center;
+
+    @media (min-width: 810px) {
+      font-size: var(--text-h1-md);
+      line-height: var(--text-h1-md-line-height);
+    }
+
+    @media (min-width: 1199px) {
+      font-size: var(--text-h1-lg);
+      line-height: var(--text-h1-lg-line-height);
+    }
+  }
+
+  h2 {
+    font-size: var(--text-h2-md);
+    line-height: var(--text-h2-md-line-height);
+    color: var(--color-green);
+    font-weight: var(--font-weight-medium);
+    text-align: center;
+
+    @media (min-width: 1199px) {
+      font-size: var(--text-h2-lg);
+      line-height: var(--text-h2-lg-line-height);
+    }
+  }
+
+  h3{
+    font-size: var(--text-h3);
+    line-height: var(--text-h3-line-height);
+    color: var(--color-green);
+    font-weight: var(--font-weight-extrabold);
+    text-align: start;
+    letter-spacing: var(--text-h3-letter-spacing);
+    text-transform: uppercase;
+  }
+
+  h4{
+    font-size: var(--text-h4);
+    line-height: var(--text-h4-line-height);
+    color: var(--color-green);
+    font-weight: var(--font-weight-semibold);
+    text-align: center;
+  }
+
+  h5{
+    font-size: var(--text-h5);
+    line-height: var(--text-h5-line-height);
+    color: var(--color-green);
+    text-transform: uppercase;
+    font-weight: var(--font-weight-semibold);
+    text-align: start;
+  }
+}
+ 
+@layer components {
+  .bodyS {
+    font-size: var(--text-body-s);
+    line-height: var(--text-body-s-line-height);
+    color: var(--color-green);
+    font-weight: normal;
+  }
+
+  .bodySMedium {
+    font-size: var(--text-body-s);
+    line-height: var(--text-body-s-line-height);
+    color: var(--color-green);
+    font-weight: medium;
+    text-align: start;
+  }
+
+  .bodyL {
+    font-size: var(--text-body-l);
+    line-height: var(--text-body-l-line-height);
+    color: var(--color-light);
+    font-weight: normal;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: var(--text-body-l-letter-spacing);
+  }
+
+  .label {
+    font-size: var(--text-label);
+    line-height: var(--text-label-line-height);
+    color: var(--color-light);
+    font-weight: var(--font-weight-black);
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: var(--text-label-letter-spacing);
+  }
+}
