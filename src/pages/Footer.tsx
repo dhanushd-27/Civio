@@ -16,9 +16,9 @@ export default function Footer() {
       </div>
       <div className='w-full flex flex-col-reverse gap-[30px] items-center mini:flex-row mini:justify-between'>
         <p className='bodyS text-light uppercase'>© 2025 studio kismo</p>
-          <Link href={"https://x.com/orca_x27"} target='_blank' className='bodyS text-light uppercase'>Twitter</Link>
-          <Link href={"https://github.com/dhanushd-27"} target="_blank" className='bodyS text-light uppercase'>Github</Link>
-        <Link href={"https://www.framer.com/@studio-kismo/"} className='bodyS text-light uppercase'>Template</Link>
+          <Link href={"https://x.com/orca_x27"} target='_blank' className='bodyS text-light uppercase hover:text-light/80 hover:duration-300'>Twitter</Link>
+          <Link href={"https://github.com/dhanushd-27"} target="_blank" className='bodyS text-light uppercase hover:text-light/80 hover:duration-300'>Github</Link>
+        <Link href={"https://www.framer.com/@studio-kismo/"} className='bodyS text-light uppercase hover:text-light/80 hover:duration-300'>Template</Link>
       </div>
     </div>
   )
