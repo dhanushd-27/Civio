@@ -4,6 +4,8 @@ import About from '../components/About'
 import Experience from '../components/Experience'
 import Projects from '@/components/Projects'
 import Education from '@/components/Education'
+import Skills from '@/components/Skills'
+import ResumeButton from '@/components/ResumeButton'
 
 export default function ResumeWrapper() {
   return (
@@ -15,6 +17,8 @@ export default function ResumeWrapper() {
       <Experience />
       <Projects />
       <Education />
+      <Skills />
+      <ResumeButton />
     </div>
   )
 }
