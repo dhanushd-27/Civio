@@ -17,6 +17,9 @@ export default function BorderTransition() {
         duration: 2,
         ease: 'easeInOut'
       }}
+      viewport={{
+        once: true
+      }}
     ></motion.div>
   )
 }

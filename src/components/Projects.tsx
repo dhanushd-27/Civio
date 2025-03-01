@@ -24,7 +24,7 @@ export default function Projects() {
   return (
     <ResumeContentAnimationWrapper>
       <ResumeContentHeader title='Featured Projects'/>
-      <div>
+      <div className='flex flex-col gap-6'>
         { projects.map((project, index) => (
           <ProjectContent key={ index } imageSrc={ project.imageSrc } projectTitle={ project.projectTitle } description={ project.description } altName={ project.altName }/>
         ))}

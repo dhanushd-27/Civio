@@ -10,11 +10,11 @@ interface Props {
 
 export default function ProjectContent({ imageSrc, altName, projectTitle, description }: Props) {
   return (
-    <div className='flex items-center justify-start gap-2.5 w-max-[500px]'>
-      <div className='sm:w-[200px] sm:h-[170px] w-full h-[170px]'>
-        <Image src={ imageSrc } alt={ altName } />
+    <div className='sm:flex-row sm:items-center flex flex-col gap-2.5 max-w-[500px]'>
+      <div className='sm:w-[200px] sm:h-[170px] w-full h-[170px] relative rounded-[9px]'>
+        <Image src={ imageSrc } alt={ altName } fill className='object-cover rounded-[9px]'/>
       </div>
-      <div className='flex flex-col gap-2.5 text-start'>
+      <div className='flex flex-col gap-2.5 text-start max-w-[500px] sm:max-w-[290px]'>
         <h4>{ projectTitle }</h4>
         <p className='bodyS'>{ description }</p>
       </div>
