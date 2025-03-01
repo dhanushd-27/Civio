@@ -43,7 +43,7 @@ export default function HeroWrapper() {
             initial="initial"
             animate="animate"
             className='inline relative'
-            onAnimationComplete={ () => { timeoutPromisified.then(() => { setFirstAnimationComplete(true) }) } }
+            onAnimationComplete={ () => { timeoutPromisified(100).then(() => { setFirstAnimationComplete(true) }) } }
           >
             { text }
           </motion.h1>
@@ -51,7 +51,7 @@ export default function HeroWrapper() {
       }
       </div>
       <Image src={ Profile } alt='profile-jpeg' className='w-[294px] h-[380px] md:h-[48vh]'/>
-      <div className='w-[400px] h-[86.5px] text-center' >
+      <div className='max-w-[400px] h-[86.5px] text-center' >
         { firstAnimationComplete &&
           (h2Items.map((item, index) => (
             <motion.h2 className='relative inline'

@@ -1,3 +1,3 @@
-export const timeoutPromisified = new Promise((resolve) => {
-  setTimeout(resolve, 500);
-})
+export const timeoutPromisified = (ms: number) => new Promise((resolve) => {
+  setTimeout(resolve, ms);
+});

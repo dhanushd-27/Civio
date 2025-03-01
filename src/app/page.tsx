@@ -1,6 +1,6 @@
-import HeroWrapper from "@/components/HeroWrapper";
-import NavBar from "@/components/NavBar";
-import ResumeWrapper from "@/components/ResumeWrapper";
+import HeroWrapper from "@/components/sections/HeroWrapper";
+import NavBar from "@/components/sections/NavBar";
+import ResumeWrapper from "@/components/sections/ResumeWrapper";
 
 export default function Home() {
   return (
