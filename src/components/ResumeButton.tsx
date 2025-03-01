@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function Skills() {
+export default function ResumeButton() {
   return (
     <div>
       

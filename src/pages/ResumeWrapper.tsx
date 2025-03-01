@@ -3,6 +3,7 @@ import React from 'react'
 import About from '../components/About'
 import Experience from '../components/Experience'
 import Projects from '@/components/Projects'
+import Education from '@/components/Education'
 
 export default function ResumeWrapper() {
   return (
@@ -13,6 +14,7 @@ export default function ResumeWrapper() {
       <About />
       <Experience />
       <Projects />
+      <Education />
     </div>
   )
 }
