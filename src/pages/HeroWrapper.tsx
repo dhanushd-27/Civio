@@ -50,7 +50,7 @@ export default function HeroWrapper() {
         ))
       }
       </div>
-      <Image src={ Profile } alt='profile-jpeg' className='w-[294px] h-[380px] md:h-[48vh]'/>
+      <Image src={ Profile } alt='profile-jpeg' className='w-[294px] h-[380px] md:h-max'/>
       <div className='max-w-[400px] h-[86.5px] text-center' >
         { firstAnimationComplete &&
           (h2Items.map((item, index) => (
