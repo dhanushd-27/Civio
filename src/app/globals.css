@@ -109,6 +109,11 @@
     }
   }
 
+  a {
+    @apply text-light no-underline;
+  }
+  
+
   h2 {
     font-size: var(--text-h2-md);
     line-height: var(--text-h2-md-line-height);
